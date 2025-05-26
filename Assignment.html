@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h4>We will multiply 3 with 254</h4>
+        <h3 id="result"></h3>
+
+        <script>
+            async function product(a,b) {
+                let response = await a * b;
+                display(response);
+            }
+            function display(some) {
+                document.getElementById("result").innerHTML = some;
+            }
+            product(3,254);
+        </script>
+    </body>
+</html>
